@@ -1,0 +1,125 @@
+/***
+ * Prowa Grid System
+ *
+ * Developed by Izaac Johansson
+ */
+
+/*  SECTIONS  */
+.izz0ware-grid .section {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.izz0ware-grid .col {
+    display: block;
+    float:left;
+    padding: 1% 0 1% 1.6%;
+}
+.izz0ware-grid .col:first-child { padding-left: 0; }
+
+/* HEADER ROW SETUP */
+.izz0ware-grid .group.header {
+    font-weight: bold;
+    background: #c7c7c7;
+    padding: 0.5% 0 0.5% 0%;
+}
+
+/* HEADER COLUMN SETUP */
+.izz0ware-grid .group.header .col {
+    padding: 0.1% 0 0.1% 1.6%;
+}
+.izz0ware-grid .group.header .col:first-child {
+    padding-left: 0;
+}
+
+/* COLUMN COLORING */
+.izz0ware-grid .group.colored .col:nth-child(even) {
+    background: #e2e2e2;
+}
+/* ROW COLORING */
+.izz0ware-grid .section.coloredrow .group:nth-child(even) {
+    background: #e2e2e2;
+}
+/* ROW + COLUMN COLORING */
+.izz0ware-grid .section.coloredrow .group.colored:nth-child(even) .col:nth-child(even) {
+    background: #d2d2d2;
+}
+/* SECTION COLORING */
+.izz0ware-grid .section {
+    border: 1px solid #c7c7c7;
+    margin-top: 1%;
+}
+.izz0ware-grid .section.noborder {
+    border: none;
+}
+.izz0ware-grid .section.nomargin {
+    margin-top: 0%;
+}
+
+/*  GROUPING  */
+.izz0ware-grid .group:before,
+.izz0ware-grid .group:after { content:""; display:table; }
+.izz0ware-grid .group:after { clear:both;}
+.izz0ware-grid .group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF TWELVE  */
+.izz0ware-grid .span_12_of_12 {
+    width: 100%;
+}
+
+.izz0ware-grid .span_11_of_12 {
+    width: 91.53%;
+}
+.izz0ware-grid .span_10_of_12 {
+    width: 83.06%;
+}
+
+.izz0ware-grid .span_9_of_12 {
+    width: 74.6%;
+}
+
+.izz0ware-grid .span_8_of_12 {
+    width: 66.13%;
+}
+
+.izz0ware-grid .span_7_of_12 {
+    width: 57.66%;
+}
+
+.izz0ware-grid .span_6_of_12 {
+    width: 49.2%;
+}
+
+.izz0ware-grid .span_5_of_12 {
+    width: 40.73%;
+}
+
+.izz0ware-grid .span_4_of_12 {
+    width: 32.26%;
+}
+
+.izz0ware-grid .span_3_of_12 {
+    width: 23.8%;
+}
+
+.izz0ware-grid .span_2_of_12 {
+    width: 15.33%;
+}
+
+.izz0ware-grid .span_1_of_12 {
+    width: 6.866%;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 850px) {
+    .izz0ware-grid .col {  padding: 1% 0 1% 0%; }
+
+    .izz0ware-grid .span_1_of_12, .izz0ware-grid .span_2_of_12, .izz0ware-grid .span_3_of_12,
+    .izz0ware-grid .span_4_of_12, .izz0ware-grid .span_5_of_12, .izz0ware-grid .span_6_of_12,
+    .izz0ware-grid .span_7_of_12, .izz0ware-grid .span_8_of_12, .izz0ware-grid .span_9_of_12,
+    .izz0ware-grid .span_10_of_12, .izz0ware-grid .span_11_of_12, .izz0ware-grid .span_12_of_12 {
+        width: 100%;
+    }
+}
